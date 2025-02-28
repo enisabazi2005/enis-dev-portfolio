@@ -15,8 +15,8 @@ const Projects = () => {
           exit={{ opacity: 0, scale: 3.77 }}
           transition={{ duration: 1 }}
         >
-          Projects<span>::latest()->get();</span>
-        </motion.h2>
+Projects<span>{'::latest()->get();'}</span>
+</motion.h2>
   
         {/* Projects Row */}
         <div className="projects-row">
