@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Projects/projects.scss";
 import { motion } from "framer-motion";
+import ImageModal from "./ImageModal";
 
 import projectImage from "../assets/dev.avif";
 import DarkVault from "../assets/Samira_Hadid-removebg-preview.77d05cd007322c281b1b.png";
@@ -21,9 +22,10 @@ import dv11 from "../assets/dv11.png";
 import dv12 from "../assets/dv12.png";
 import dv13 from "../assets/dv13.png";
 
-
-
 const Projects = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const darkVaultImages = [dv1, dv2, dv3, dv4, dv5, dv6, dv7, dv8, dv9, dv10, dv11, dv12, dv13];
+
   return (
     <section className="projects">
       {/* Title */}
@@ -54,7 +56,7 @@ const Projects = () => {
             It has the feature of live chat, groups, pro version and more...
           </p>
           <div>
-            <h1>Check some images as preview...</h1>
+            <h1 onClick={() => setIsModalOpen(true)}>Check some images as preview...</h1>
           </div>
         </div>
       </div>
@@ -126,6 +128,13 @@ const Projects = () => {
           </a>
         </div>
       </div>
+
+      {/* Image Modal */}
+      <ImageModal 
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        images={darkVaultImages}
+      />
     </section>
   );
 };
