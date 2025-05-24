@@ -1,42 +1,118 @@
 import React from "react";
 import "../Projects/projects.scss";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 import projectImage from "../assets/dev.avif";
+import DarkVault from "../assets/Samira_Hadid-removebg-preview.77d05cd007322c281b1b.png";
+import MjekuAi from "../assets/wmremove-transformed.png";
+import OurTok from "../assets/Screenshot 2025-05-24 194004.png";
+import Coding from "../assets/coding.png";
 
 const Projects = () => {
-    return (
-      <section className="projects">
-        {/* Title */}
-        <motion.h2
-          className="projects-title"
-          initial={{ opacity: 0, scale: 3.77 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 3.77 }}
-          transition={{ duration: 1 }}
-        >
-Projects<span>{'::latest()->get();'}</span>
-</motion.h2>
-  
-        {/* Projects Row */}
-        <div className="projects-row">
-          {/* Left Column - Image */}
-          <div className="projects-image">
-            <img src={projectImage} alt="Upcoming Big Projects" />
-          </div>
-  
-          {/* Right Column - Text */}
-          <div className="projects-info">
-            <h1>Upcoming Big Projects</h1>
-            <p>
-              There are a lot of big projects coming up that are with backend and
-              frontend. Be patient.
-            </p>
+  return (
+    <section className="projects">
+      {/* Title */}
+      <motion.h2
+        className="projects-title"
+        initial={{ opacity: 0, scale: 3.77 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 3.77 }}
+        transition={{ duration: 1 }}
+      >
+        Projects<span>{"::latest()->get();"}</span>
+      </motion.h2>
+
+      {/* Projects Row */}
+      <div className="projects-row">
+        {/* Left Column - Image */}
+        <div className="projects-image">
+          <img src={DarkVault} alt="Vaulter" />
+        </div>
+
+        {/* Right Column - Text */}
+        <div className="projects-info">
+          <h1>Vaulter</h1>
+          <p>
+            Vaulter is a social media application that offers you a free storage use to store passwords,notes,emails and more...
+          </p>
+          <p>
+            It has the feature of live chat, groups, pro version and more...
+          </p>
+          <div>
+            <h1>Check some images as preview...</h1>
           </div>
         </div>
-      </section>
-    );
-  };
-  
-  export default Projects;
+      </div>
+        <div className="projects-row">
+        {/* Left Column - Image */}
+        <div className="projects-image">
+          <img src={MjekuAi} alt="Mjeku Ai" />
+        </div>
 
+        {/* Right Column - Text */}
+        <div className="projects-info">
+          <h1>Mjeku Ai</h1>
+          <p>
+            Mjeki Ai is first Ai Agent in Kosovo/Albania that offers healthcare through chat and voice. Try it out.
+          </p>
+          <a className="project-link-href" href="https://mjeku-ai-frontend.vercel.app/">
+              Mjeku Ai Agent
+          </a>
+        </div>
+      </div>
+        <div className="projects-row">
+        {/* Left Column - Image */}
+        <div className="projects-image">
+          <img src={OurTok} alt="Vaulter" />
+        </div>
+
+        {/* Right Column - Text */}
+        <div className="projects-info">
+          <h1>OurTok</h1>
+          <p>
+            OurTook is a social media platform that can be purcashed only for couples, which only them can share photos,videos online. You need purcashe license to access it.
+          </p>
+          <a className="project-link-href" href="https://ourtok-front .vercel.app">
+            OurTok
+          </a>
+        </div>
+      </div>
+        <div className="projects-row">
+        {/* Left Column - Image */}
+        <div className="projects-image">
+          <img src={projectImage} alt="cvaio" />
+        </div>
+
+        {/* Right Column - Text */}
+        <div className="projects-info">
+          <h1>Cvaio</h1>
+          <p>
+            Cvaio is a platform that lets you upload your CV and then you can edit,remove and save the same CV but now updated.
+          </p>
+          <span>
+            It is still in development...
+          </span>
+        </div>
+      </div>
+        <div className="projects-row">
+        {/* Left Column - Image */}
+        <div className="projects-image">
+          <img src={Coding} alt="devpulse" />
+        </div>
+
+        {/* Right Column - Text */}
+        <div className="projects-info">
+          <h1>Devpulse</h1>
+          <p>
+            Devpulse is actually my portfolio as my company that i do services for my clients, check it out
+          </p>
+          <a className="project-link-href" href="https://pulsedev.vercel.app/">
+            DevPulse
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;

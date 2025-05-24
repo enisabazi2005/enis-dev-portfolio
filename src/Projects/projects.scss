@@ -5,7 +5,7 @@
     color: #fff;
 
     @media screen and (max-width: 768px) {
-        padding: 80px 100px;
+        padding: 50px;
     }
   
     .projects-title {
@@ -20,6 +20,7 @@
   
     .projects-row {
       display: flex;
+      margin: 15px 0;
       justify-content: center;
       align-items: center;
       gap: 40px;
@@ -44,7 +45,7 @@
     .projects-image img {
       width: 100%;  // Make image responsive
       height: auto;
-      max-width: 450px;  // Ensures image doesn't grow too large
+      max-width: 350px;  // Ensures image doesn't grow too large
       border-radius: 50px;
       filter: hue-rotate(45deg);
       position: relative;
@@ -54,6 +55,19 @@
     .projects-info {
       text-align: left;
       max-width: 600px;
+      padding: 40px;
+
+      div { 
+        position: relative;
+        h1 { 
+          font-size: 15px;
+          font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          color: #672ae9;
+          margin: 30px 0;
+          font-weight: 500;
+          cursor: pointer;
+        }
+      }
   
       h1 {
         font-size: 32px;
@@ -67,10 +81,32 @@
         color: #9b9b9b;
         text-align: start;
       }
+      span { 
+        color: black;
+        position: relative;
+        top: 30px;
+        font-size: 15px;
+        font-weight: 500;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+      }
+    }
+    .project-link-href { 
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: #672ae9;
+      position: relative;
+      top: 30px;
+      left: 0;
     }
   
     // Responsive styles
     @media screen and (max-width: 768px) {
+      .projects { 
+        padding: 50px !important;
+      }
       .projects-title {
         font-size: 45px;
       }
@@ -106,6 +142,9 @@
     }
   
     @media screen and (max-width: 480px) {
+      .projects { 
+        padding: 50px !important;
+      }
       .projects-title {
         font-size: 35px;
       }
