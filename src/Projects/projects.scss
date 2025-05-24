@@ -5,7 +5,7 @@
     color: #fff;
 
     @media screen and (max-width: 768px) {
-        padding: 50px;
+        padding: 50px 20px;  // Adjusted padding for mobile
     }
   
     .projects-title {
@@ -30,6 +30,12 @@
       box-shadow: 0 5px 25px #8555ed1c;
       width: 100%;
       flex-wrap: wrap;  // Added for better wrapping behavior on smaller screens
+  
+      @media screen and (max-width: 768px) {
+        padding: 20px;
+        margin: 15px auto;
+        width: 90%;  // Added width control for mobile
+      }
   
       .projects-image { 
         flex-basis: 50%;
@@ -105,7 +111,7 @@
     // Responsive styles
     @media screen and (max-width: 768px) {
       .projects { 
-        padding: 50px !important;
+        padding: 50px 20px !important;  // Updated padding
       }
       .projects-title {
         font-size: 45px;
@@ -115,6 +121,8 @@
         flex-direction: column;
         gap: 20px;
         padding: 20px;
+        width: 90%;  // Added width control
+        margin: 15px auto;  // Center the row
       }
   
       .projects-image {
@@ -143,7 +151,7 @@
   
     @media screen and (max-width: 480px) {
       .projects { 
-        padding: 50px !important;
+        padding: 30px 15px !important;  // Further reduced padding for smaller screens
       }
       .projects-title {
         font-size: 35px;
@@ -161,6 +169,11 @@
   
       .projects-image img {
         max-width: 90%;  // Further reduce image size
+      }
+  
+      .projects-row {
+        width: 95%;  // Slightly wider on very small screens
+        padding: 15px;
       }
     }
 
