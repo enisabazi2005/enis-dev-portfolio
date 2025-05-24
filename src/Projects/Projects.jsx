@@ -7,6 +7,21 @@ import DarkVault from "../assets/Samira_Hadid-removebg-preview.77d05cd007322c281
 import MjekuAi from "../assets/wmremove-transformed.png";
 import OurTok from "../assets/Screenshot 2025-05-24 194004.png";
 import Coding from "../assets/coding.png";
+import dv1 from "../assets/dv1.png";
+import dv2 from "../assets/dv2.png";
+import dv3 from "../assets/dv3.png";
+import dv4 from "../assets/dv4.png";
+import dv5 from "../assets/dv5.png";
+import dv6 from "../assets/dv6.png";
+import dv7 from "../assets/dv7.png";
+import dv8 from "../assets/dv8.png";
+import dv9 from "../assets/dv9.png";
+import dv10 from "../assets/dv10.png";
+import dv11 from "../assets/dv11.png";
+import dv12 from "../assets/dv12.png";
+import dv13 from "../assets/dv13.png";
+
+
 
 const Projects = () => {
   return (
